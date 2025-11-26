@@ -5,6 +5,7 @@ public class ControlDeNave : MonoBehaviour
 {
 
     public float rapidez = 1f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     Rigidbody rigidbody;
     Transform transform;
@@ -74,8 +75,9 @@ public class ControlDeNave : MonoBehaviour
             case "Combustible":
                 print("Combustible...");
                 break;
-            /*case "ObstaculoEnMovimiento":
-                break;*/
+            case "ObstaculoEnMovimiento":
+                print("Mareos xD");
+                break;
             case "Meta":
                 SceneManager.LoadScene("NivelDificil");
                 break;
