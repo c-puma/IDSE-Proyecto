@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 24dd7d58b328dcb428529b7a66fa462c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1043,7 +1043,7 @@ GameObject:
   - component: {fileID: 575155342}
   m_Layer: 0
   m_Name: Plataforma de despegue
-  m_TagString: Untagged
+  m_TagString: ColisionSegura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1617,6 +1617,67 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8493499331828956048, guid: c5fb7c5fb1a39d74c94a7955d3ae008c, type: 3}
+--- !u!1001 &1231858671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5869371329102973155, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_Name
+      value: Platafoforma En Movimiento
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869371329102973155, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_TagString
+      value: ObstaculoEnMovimiento
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088575768162934872, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da57bd4c1fb5c3d449b39e73f5eceea7, type: 3}
 --- !u!1 &1275156857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,6 +2290,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma Segura
       objectReference: {fileID: 0}
+    - target: {fileID: 4162892047240338449, guid: 030df08664ece734c83a0004d1c1b58d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162892047240338449, guid: 030df08664ece734c83a0004d1c1b58d, type: 3}
+      propertyPath: m_TagString
+      value: Meta
+      objectReference: {fileID: 0}
     - target: {fileID: 6234140636819734109, guid: 030df08664ece734c83a0004d1c1b58d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30
@@ -2284,6 +2353,7 @@ SceneRoots:
   - {fileID: 1275156861}
   - {fileID: 575155345}
   - {fileID: 5682096935831066394}
+  - {fileID: 1231858671}
   - {fileID: 1073996694}
   - {fileID: 1184899062}
   - {fileID: 2110868404}

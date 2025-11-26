@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlDeNave : MonoBehaviour
 {
@@ -73,8 +74,14 @@ public class ControlDeNave : MonoBehaviour
             case "Combustible":
                 print("Combustible...");
                 break;
+            /*case "ObstaculoEnMovimiento":
+                break;*/
+            case "Meta":
+                SceneManager.LoadScene("NivelDificil");
+                break;
             default:
-                print("Estas muerto...!!!");
+                //print("Estas muerto...!!!");
+                SceneManager.LoadScene("Nivel01");
                 break;
 
         }
